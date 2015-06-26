@@ -17,7 +17,7 @@ require.config({
         'jquery.event.swipe': '../bower_components/jquery.event.swipe/js/jquery.event.swipe',
         modernizr: '../bower_components/modernizr/modernizr',
         'jquery-cookie': '../bower_components/jquery-cookie/jquery.cookie',
-        'dayPilot': '../bower_components/day-pilot/daypilot',
+        'dayPilot': './lib/dayPilot'
     },
     shim: {
         angular: {
