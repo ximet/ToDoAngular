@@ -8,7 +8,9 @@ define(['./module'], function (controllers) {
 
             $scope.add = function() {
                 if($scope.formTodoText != undefined && $scope.formTodoText != '') {
-                    $scope.dateService.currentEvents = JSON.parse(localStorage.getItem('events'));
+                    if(localStorage.length != 0) {
+                        $scope.dateService.currentEvents = JSON.parse(localStorage.getItem('events'));
+                    }
                     $scope.dateService.currentEvents.push(
                         {
                             start: new DayPilot.Date($scope.dateService.currentDay),
