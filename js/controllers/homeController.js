@@ -6,6 +6,6 @@ define([ './module' ], function (controllers) {
 
             $scope.onToDoClick = function () {
                 $state.go('todo.mainInitial');
-            }
+            };
         } ]);
 });

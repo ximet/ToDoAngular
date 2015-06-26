@@ -16,5 +16,5 @@ define([
 ], function (ng) {
     'use strict';
 
-    return ng.module('app', [ 'angularSpinner', 'uiRouterStyles', 'ui.router', 'ui.bootstrap', 'app.services', 'app.controllers', 'daypilot' ])
+    return ng.module('app', [ 'angularSpinner', 'uiRouterStyles', 'ui.router', 'ui.bootstrap', 'app.services', 'app.controllers', 'daypilot' ]);
 });

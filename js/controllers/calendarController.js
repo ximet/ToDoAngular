@@ -8,24 +8,24 @@ define([ './module' ], function (controllers) {
             $scope.eventService = eventService;
 
             $scope.dayConfig = {
-                scale: "Day",
+                scale: 'Day',
                 days: 8,
                 startDate: $scope.dateService.today,
 
-                eventClickHandling: "Select",
+                eventClickHandling: 'Select',
                 onEventSelected: function (args) {
                     $scope.selectedEvents = $scope.dp.multiselect.events();
                     $scope.$apply();
                 },
                 timeHeaders: [
-                    { groupBy: "Month" },
-                    { groupBy: "Cell", format: "d" }
+                    { groupBy: 'Month' },
+                    { groupBy: 'Cell', format: 'd' }
                 ],
                 resources: [
-                    { name: "Room B", id: "B" },
-                    { name: "Room C", id: "C" },
-                    { name: "Room D", id: "D" },
-                    { name: "Room E", id: "E" }
+                    { name: 'Room B', id: 'B' },
+                    { name: 'Room C', id: 'C' },
+                    { name: 'Room D', id: 'D' },
+                    { name: 'Room E', id: 'E' }
                 ],
                 onEventMove: function (args) {
                     var params = {

@@ -1,7 +1,9 @@
 define([ './module' ], function (services) {
     'use strict';
 
-    services.factory('dateService', [ function () {
+    services.factory('dateService', [
+
+ function () {
 
      /**
       * private variables
@@ -18,7 +20,7 @@ define([ './module' ], function (services) {
       * @returns {string}
       */
      var formattedDateWithOffset = function (offset) {
-            return moment().day(offset).format('YYYY-MM-DDTHH:mm:ss')
+            return moment().day(offset).format('YYYY-MM-DDTHH:mm:ss');
         };
 
      return {
@@ -33,10 +35,10 @@ define([ './module' ], function (services) {
 
                     self.currentDay = formattedDateWithOffset(offset);
                     momentDay++;
-                    $('#previousDay').removeAttr("disabled", "disabled");
+                    $('#previousDay').removeAttr('disabled', 'disabled');
                 }
                 else {
-                    $('#nextDay').attr("disabled", "disabled");
+                    $('#nextDay').attr('disabled', 'disabled');
                 }
             },
 
@@ -48,10 +50,10 @@ define([ './module' ], function (services) {
 
                     self.currentDay = formattedDateWithOffset(offset);
                     momentDay--;
-                    $('#nextDay').removeAttr("disabled", "disabled");
+                    $('#nextDay').removeAttr('disabled', 'disabled');
                 }
                 else {
-                    $('#previousDay').attr("disabled", "disabled");
+                    $('#previousDay').attr('disabled', 'disabled');
                 }
             },
 

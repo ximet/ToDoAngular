@@ -36,7 +36,7 @@ define([ './app' ], function (app) {
 
     } ])
         .run([ '$rootScope', '$state', function ($rootScope, $state) {
-            $rootScope.$on("$stateChangeSuccess", function (event, next, nextParams, current, currentParams) {
+            $rootScope.$on('$stateChangeSuccess', function (event, next, nextParams, current, currentParams) {
                 next.data.previousState = {
                     name: current.name,
                     params: currentParams
