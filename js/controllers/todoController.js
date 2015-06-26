@@ -3,6 +3,5 @@ define(['./module'], function (controllers) {
     controllers.controller('todoController', ['$scope', '$state', '$timeout',
         function ($scope, $state, $timeout) {
 
-
         }]);
 });

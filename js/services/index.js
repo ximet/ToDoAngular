@@ -1,3 +1,4 @@
 define([
-    './dateService'
+    './dateService',
+    './eventService'
 ], function () {});

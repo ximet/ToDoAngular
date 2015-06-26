@@ -1,10 +1,10 @@
 define(['./module'], function (controllers) {
     'use strict';
-    controllers.controller('calendarController', ['$scope', '$state', '$timeout', 'dateService',
-        function ($scope, $state, $timeout, dateService) {
+    controllers.controller('calendarController', ['$scope', '$state', '$timeout', 'eventService', 'dateService',
+        function ($scope, $state, $timeout, eventService, dateService) {
 
             $scope.dateService = dateService;
-
+            $scope.eventService = eventService;
 
             $scope.dayConfig = {
                 scale: "Day",
