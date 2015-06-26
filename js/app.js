@@ -12,8 +12,9 @@ define([
     'jquery-cookie',
     './services/index',
     './controllers/index',
-    './directives/index'
+    './directives/index',
+    'dayPilot'
 ], function(ng){
     'use strict';
-    return ng.module('app',['angularSpinner', 'uiRouterStyles', 'ui.router', 'ui.bootstrap', 'app.services', 'app.directives', 'app.controllers'])
+    return ng.module('app',['angularSpinner', 'uiRouterStyles', 'ui.router', 'ui.bootstrap', 'app.services', 'app.directives', 'app.controllers', 'daypilot'])
 });

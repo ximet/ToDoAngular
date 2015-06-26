@@ -1,0 +1,73 @@
+.button.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.full-height{
+    height: 100%;
+    width: 100%;
+    color: black;
+    margin: 0 auto;
+}
+
+.background-theme{
+    background: url("../content/images/background.png");
+    min-height: 720px;
+    overflow: hidden;
+}
+.background-todo{
+    background-image: url("../content/images/nature.jpg");
+    min-height: 68em;
+}
+
+.mainBtn {
+    position: absolute;
+    top: 17em;
+    left: 28.5em;
+    background: #de691b;
+    background-image: -webkit-linear-gradient(top, #de691b, #fc6500);
+    background-image: -moz-linear-gradient(top, #de691b, #fc6500);
+    background-image: -ms-linear-gradient(top, #de691b, #fc6500);
+    background-image: -o-linear-gradient(top, #de691b, #fc6500);
+    background-image: linear-gradient(to bottom, #de691b, #fc6500);
+    -webkit-border-radius: 22;
+    -moz-border-radius: 22;
+    border-radius: 22px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px 27px 19px 27px;
+    text-decoration: none;
+}
+
+.mainBtn:hover {
+    background: #fce23c;
+    background-image: -webkit-linear-gradient(top, #fce23c, #d9b034);
+    background-image: -moz-linear-gradient(top, #fce23c, #d9b034);
+    background-image: -ms-linear-gradient(top, #fce23c, #d9b034);
+    background-image: -o-linear-gradient(top, #fce23c, #d9b034);
+    background-image: linear-gradient(to bottom, #fce23c, #d9b034);
+    text-decoration: none;
+}
+
+.toolbar{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.toolbar p{
+    font-size: 1.2em;
+    font-family: Georgia;
+    font-weight: bold;
+}
+.toolbar .currentDay{
+
+    height: 2.4em;
+    position: relative;
+}
+.toolbar .currentDay p.textDate {
+    font-size: 0.9em;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+}

@@ -1,0 +1,26 @@
+<div class="col-xs-12 toolbar">
+    <p class="col-xs-2">New Task:</p>
+    <button ng-click="toggleElement = !toggleElement" ng-hide="toggleElement" class="toggle col-xs-1 btn btn-primary">
+        <span class="glyphicon glyphicon-star-empty"></span>
+    </button>
+    <button ng-click="toggleElement = !toggleElement" ng-hide="!toggleElement" class="untoggle col-xs-1 btn btn-primary">
+        <span class="glyphicon glyphicon-star"></span>
+    </button>
+
+    <button ng-click="dateService.previousDay()" id="previousDay" class="button col-xs-1 col-xs-offset-1 btn btn-warning">-</button>
+    <div class="col-xs-2 alert alert-success currentDay">
+        <p class=" textDate">{{dateService.converterDate()}}</p>
+    </div>
+
+    <button ng-click="dateService.nextDay()" id="nextDay" class="button col-xs-1 btn btn-warning">+</button>
+
+
+    <div class="col-xs-3">
+        <div class="input-group">
+            <input type="text" ng-model="formTodoText"  maxlength="20" class="add-input form-control" placeholder="Doing...">
+      <span class="input-group-btn">
+        <button class="btn btn-danger" type="button" ng-click="add()">Add</button>
+      </span>
+        </div>
+    </div>
+</div>

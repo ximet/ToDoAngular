@@ -1,3 +1,3 @@
 define([
-    './test'
+    './dateService'
 ], function () {});

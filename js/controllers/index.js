@@ -1,3 +1,6 @@
 define([
-    './homeController'
+    './homeController',
+    './calendarController',
+    './todoController',
+    './toolbarController'
 ], function () {});

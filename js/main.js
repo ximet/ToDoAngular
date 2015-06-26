@@ -16,7 +16,8 @@ require.config({
         'jquery.event.move': '../bower_components/jquery.event.move/js/jquery.event.move',
         'jquery.event.swipe': '../bower_components/jquery.event.swipe/js/jquery.event.swipe',
         modernizr: '../bower_components/modernizr/modernizr',
-        'jquery-cookie': '../bower_components/jquery-cookie/jquery.cookie'
+        'jquery-cookie': '../bower_components/jquery-cookie/jquery.cookie',
+        'dayPilot': '../bower_components/day-pilot/daypilot',
     },
     shim: {
         angular: {
@@ -29,6 +30,11 @@ require.config({
         },
         'angular-ui-router-styles' : ['angular', 'angular-ui-router'],
         bootstrap: ['jquery'],
+        'dayPilot': {
+            deps: [
+                'angular'
+            ]
+        },
         'jquery-cookie': ['jquery'],
         'angular-spinner' : ['spin'],
         'ui.bootstrap': {
