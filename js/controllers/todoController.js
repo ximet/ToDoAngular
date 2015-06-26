@@ -1,7 +1,8 @@
-define(['./module'], function (controllers) {
+define([ './module' ], function (controllers) {
     'use strict';
-    controllers.controller('todoController', ['$scope', '$state', '$timeout',
+
+    controllers.controller('todoController', [ '$scope', '$state', '$timeout',
         function ($scope, $state, $timeout) {
 
-        }]);
+        } ]);
 });

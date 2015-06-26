@@ -22,32 +22,32 @@ require.config({
     shim: {
         angular: {
             exports: 'angular',
-            deps: ['jquery', 'jquery.event.move', 'jquery.event.swipe']
+            deps: [ 'jquery', 'jquery.event.move', 'jquery.event.swipe' ]
         },
         'angular-ui-router': {
             exports: 'angular-ui-router',
-            deps: ['angular']
+            deps: [ 'angular' ]
         },
-        'angular-ui-router-styles' : ['angular', 'angular-ui-router'],
-        bootstrap: ['jquery'],
+        'angular-ui-router-styles': [ 'angular', 'angular-ui-router' ],
+        bootstrap: [ 'jquery' ],
         'dayPilot': {
             deps: [
                 'angular'
             ]
         },
-        'jquery-cookie': ['jquery'],
-        'angular-spinner' : ['spin'],
+        'jquery-cookie': [ 'jquery' ],
+        'angular-spinner': [ 'spin' ],
         'ui.bootstrap': {
             deps: [
                 'angular'
             ]
         },
-        'angular-moment' : {
+        'angular-moment': {
             exports: 'angular-moment',
-            deps: ['angular','moment']
+            deps: [ 'angular', 'moment' ]
         },
-        'jquery.event.move': ['jquery'],
-        'jquery.event.swipe': ['jquery', 'jquery.event.move'],
+        'jquery.event.move': [ 'jquery' ],
+        'jquery.event.swipe': [ 'jquery', 'jquery.event.move' ],
         modernizr: {
             exports: 'modernizr'
         }

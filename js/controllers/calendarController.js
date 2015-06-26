@@ -1,6 +1,7 @@
-define(['./module'], function (controllers) {
+define([ './module' ], function (controllers) {
     'use strict';
-    controllers.controller('calendarController', ['$scope', '$state', '$timeout', 'eventService', 'dateService',
+
+    controllers.controller('calendarController', [ '$scope', '$state', '$timeout', 'eventService', 'dateService',
         function ($scope, $state, $timeout, eventService, dateService) {
 
             $scope.dateService = dateService;
@@ -12,7 +13,7 @@ define(['./module'], function (controllers) {
                 startDate: $scope.dateService.today,
 
                 eventClickHandling: "Select",
-                onEventSelected: function(args) {
+                onEventSelected: function (args) {
                     $scope.selectedEvents = $scope.dp.multiselect.events();
                     $scope.$apply();
                 },
@@ -36,5 +37,5 @@ define(['./module'], function (controllers) {
                 }
             };
 
-        }]);
+        } ]);
 });
